@@ -15,6 +15,23 @@ class AuthController extends Controller
 {
     use HttpResponses;
 
+    public function login(LoginUserRequest $request) 
+    {
+        $request->validated($request->all());
+        if(!Auth::attempt($request->only(['email', 'password']))) {
+            $message = [
+                'en' => 'Credentials do not match',
+                'pt' => 'Credenciais não batem'
+            ];
+            return $this->error('', $message, 401);
+        }
+        $user = User::where('email', $request->email)->first();
+        return $this->success([
+            'user' => new UserResource($user),
+            'token' => $user->createToken('Api Token of ' . $user->name)->plainTextToken
+        ]);
+    }
+    
     public function register(StoreUpdateUserRequest $request)
     {
         $request->validated($request->all());
