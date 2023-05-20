@@ -13,4 +13,14 @@ trait HttpResponses {
             'data' => $data
         ], $code);
     }
+    protected function error($data, $message = null, $code = 404) {
+        return response()->json([
+            'status' => [
+                'en' => 'Error has occurred...',
+                'pt' => 'Um erro está ocorrendo...'
+            ],
+            'message' => $message,
+            'data' => $data
+        ], $code);
+    }
 }
