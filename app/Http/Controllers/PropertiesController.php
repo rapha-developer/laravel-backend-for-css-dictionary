@@ -39,6 +39,14 @@ class PropertiesController extends Controller
     }
     
     /**
+     * Display the specified resource.
+     */
+    public function show(Property $property)
+    {
+        return $this->isNotAuthorize($property) ? $this->isNotAuthorize($property) : new PropertiesResource($property);
+    }
+    
+    /**
      * Check if action is not authorize for user.
      */
     private function isNotAuthorize($property) 
