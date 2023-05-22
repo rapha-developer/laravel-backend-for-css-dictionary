@@ -22,7 +22,7 @@ class PropertiesController extends Controller
             Property::where('user_id', Auth::user()->id)->get()
         );
     }
-    
+
     /**
      * Store a newly created resource in storage.
      */
@@ -36,5 +36,15 @@ class PropertiesController extends Controller
             'category' => $request->category
         ]);
         return new PropertiesResource($property);
+    }
+    
+    /**
+     * Check if action is not authorize for user.
+     */
+    private function isNotAuthorize($property) 
+    {
+        if (Auth::user()->id !== $property->user_id) {
+            return $this->error('', 'You are not authorized to make this request', 403);
+        }
     }
 }
