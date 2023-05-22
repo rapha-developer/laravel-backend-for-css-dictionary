@@ -45,7 +45,7 @@ class PropertiesController extends Controller
     {
         return $this->isNotAuthorize($property) ? $this->isNotAuthorize($property) : new PropertiesResource($property);
     }
-
+    
     /**
      * Update the specified resource in storage.
      */
@@ -57,6 +57,14 @@ class PropertiesController extends Controller
             $property->update($request->all());
         }
         return new PropertiesResource($property);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Property $property)
+    {
+        return ($this->isNotAuthorize($property)) ? $this->isNotAuthorize($property) : $property->delete();
     }
     
     /**
