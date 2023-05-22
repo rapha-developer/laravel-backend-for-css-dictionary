@@ -22,5 +22,19 @@ class PropertiesController extends Controller
             Property::where('user_id', Auth::user()->id)->get()
         );
     }
-
+    
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(StorePropertyRequest $request)
+    {
+        $request->validated($request->all());
+        $property = Property::create([
+            'user_id' => Auth::user()->id,
+            'name' => $request->name,
+            'description' => $request->description,
+            'category' => $request->category
+        ]);
+        return new PropertiesResource($property);
+    }
 }
