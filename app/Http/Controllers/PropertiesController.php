@@ -45,6 +45,19 @@ class PropertiesController extends Controller
     {
         return $this->isNotAuthorize($property) ? $this->isNotAuthorize($property) : new PropertiesResource($property);
     }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, Property $property)
+    {
+        if ($this->isNotAuthorize($property)) {
+            return $this->isNotAuthorize($property);
+        } else {
+            $property->update($request->all());
+        }
+        return new PropertiesResource($property);
+    }
     
     /**
      * Check if action is not authorize for user.
