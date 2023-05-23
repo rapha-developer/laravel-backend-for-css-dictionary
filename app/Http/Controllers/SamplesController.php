@@ -30,6 +30,26 @@ class SamplesController extends Controller
         );
     }
     /**
+     * Store a newly created resource in storage.
+     */
+    public function store(StoreSampleRequest $request)
+    {
+        $request->validated($request->all());
+        
+        if ($this->isNotAuthorize($request->property_id)) 
+        {
+            return $this->isNotAuthorize($request->property_id);
+        } else {
+            $sample = Sample::create([
+                'property_id' => $request->property_id,
+                'title' => $request->title,
+                'description' => $request->description,
+                'description_pt' => $request->description_pt,
+            ]);
+            return new SamplesResource($sample);
+        }
+    }
+    /**
      * Check if action is not authorize for user.
      */
     private function isNotAuthorize($property_id) 
