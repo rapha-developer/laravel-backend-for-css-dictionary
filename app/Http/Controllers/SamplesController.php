@@ -29,5 +29,14 @@ class SamplesController extends Controller
             Sample::whereIn('property_id', $array)->get()
         );
     }
-
+    /**
+     * Check if action is not authorize for user.
+     */
+    private function isNotAuthorize($property_id) 
+    {
+        $property = Property::where('id', $property_id)->first();
+        if (Auth::user()->id !== $property->user_id) {
+            return $this->error('','You are not authorized to make this request', 403);
+        }
+    }
 }
