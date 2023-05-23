@@ -29,6 +29,7 @@ class SamplesController extends Controller
             Sample::whereIn('property_id', $array)->get()
         );
     }
+    
     /**
      * Store a newly created resource in storage.
      */
@@ -49,6 +50,15 @@ class SamplesController extends Controller
             return new SamplesResource($sample);
         }
     }
+    
+    /**
+     * Display the specified resource.
+     */
+    public function show(Sample $sample)
+    {
+        return ($this->isNotAuthorize($sample->property_id)) ? $this->isNotAuthorize($sample->property_id) : new SamplesResource($sample);
+    }
+
     /**
      * Check if action is not authorize for user.
      */
