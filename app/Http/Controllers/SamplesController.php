@@ -72,6 +72,14 @@ class SamplesController extends Controller
         }
         return new SamplesResource($sample);
     }
+    
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Sample $sample)
+    {
+        return $this->isNotAuthorize($sample->property_id) ? $this->isNotAuthorize($sample->property_id) : $sample->delete();
+    }
 
     /**
      * Check if action is not authorize for user.
