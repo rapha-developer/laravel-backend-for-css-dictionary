@@ -7,59 +7,114 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Overview
+
+[Overview](#overview)
+
+- [Root Endpoint](#root-endpoint)
+- [Authentication](#authentication)
+- [Content-Type: JSON](#content-type-json)
+- [API Rate Limit](#api-rate-limit)
+- [Errors](#errors)
+
+## Root Endpoint
+
+<p align="left">The (Laravel Backend for CSS Dictionary) API root endpoint have only welcome's response for user. Please refer to the table below for the appropriate endpoint.</p>
+
+<p align="left"><i>"O (Laravel Backend for CSS Dictionary) API endpoint raiz possui apenas uma resposta de boas vindas para o usuário. Por favor, consulte a tabela abaixo para obter o endpoint apropriado."</i></p>
+
+Route name | Method | Endpoint
+---------- | ------ | --------
+API Root   | `GET`  | `/`
+
+<br />
+
+> #### Notes
+> ######  Complete Endpoint
+> ```bash
+>   GET {website}/
+> ```
+> ######  Demo onlive (demonstração ao vivo)
+> ```bash
+>   https://rapha-developer-laravel.000webhostapp.com
+> ```
+> :point_right: <b>Ou</b> click [here](https://rapha-developer-laravel.000webhostapp.com)
+
+<br />
+
+## Authentication
+
+### Public Routes
+<p align="left">All public requests to the API can be accessed by any user. Even without needing any authentication. (Please, refer to the table below for the proper link).</p>
+<p align="left"><i>Todas as solicitações públicas para a API podem ser acessadas por qualquer usuário. Inclusive, sem precisar de qualquer autenticação. (Por favor, consulte a tabela abaixo para obter o endpoint apropriado).</i></p>
+
+Route name | Visibility | Method | Endpoint |  Description
+---------- | ---------- | ------ | -------- | -------
+Register user | `public` | `POST`  | `/register` | `Creates a user in database and generate a token for access protected routes.`
+Login user | `public` | `POST` | `/login` | `Make login with the credentials {email, password} created by registered user`
+
+<br />
+
+> #### Notes
+> ######  Complete Endpoint
+> ```bash
+>   POST {website}/register
+> ```
+> ######  Demo online (demonstração ao vivo)
+> ```bash
+>   https://rapha-developer-laravel.000webhostapp.com/register
+> ```
+> **AND** 
+> ######  Complete Endpoint
+> ```bash
+>   POST {website}/login
+> ```
+> ######  Demo onlive (demonstração ao vivo)
+> ```bash
+>   https://rapha-developer-laravel.000webhostapp.com/login
+> ```
+<br />
+
+### Protected Routes 
+<p align="left">All protected requests to the API need an API token. Generate a token using <b>public routes</b> from API. (Please, refer to the table below for the proper link).</p>
+<p align="left"><i>Todas as solicitações protegidas para a API precisam de um token de API. Gere um token usando <b>rotas públicas</b> da API. (Por favor, consulte a tabela abaixo para obter o endpoint apropriado).</i></p>
+
+##### Properties routes
+
+Route name | Visibility | Method | Endpoint
+---------- | ---------- | ------ | --------
+Properties.index | `protected` | `GET`  | `/properties`
+Properties.store | `protected` | `POST` | `/properties`
+Properties.show | `protected` | `GET` | `/properties/:id`
+Properties.update | `protected` | `PATCH` | `/properties/:id`
+Properties.delete | `protected` | `DELETE` | `/properties/:id`
+
+##### Samples routes
+
+Route name | Visibility | Method | Endpoint
+---------- | ---------- | ------ | --------
+Samples.index | `protected` | `GET`  | `/samples`
+Samples.store | `protected` | `POST` | `/samples`
+Samples.show | `protected` | `GET` | `/samples/:id`
+Samples.update | `protected` | `PATCH` | `/samples/:id`
+Samples.delete | `protected` | `DELETE` | `/samples/:id`
+
+<br />
+
+> #### Notes
+> ######  The `bearer token` is sent in the Authorization header.
+> ```bash
+>   Authorization: Bearer 4|ViZeL2NUDQ3o9mbNCQPpGy7q0ZrHAjc2TNHEUcex 
+> ```
+> Not use this token above, it just example! 
+> ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/cf84fb36-0f6c-4a8a-a70f-b3472d8234eb
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
