@@ -148,6 +148,30 @@ Para cada requisição contendo corpo com JSON, você precisará anexar as <b>op
 
 <br />
 
+## Endpoint Reference
+
+### Register User
+<p align="left">Register a new User</p>
+
+##### Body Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+name | `string` | `required` 
+email | `email` | `required`  
+password | `string` | `required`
+password_confirmation | `string` | `required`  
+
+> #### Notes
+> - If you use an <b>email already registered</b>, you will get `422` error.
+> - If you have success, you will get `200` status code.
+> ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/6bc218bc-b606-4537-ae3d-be3a334f2c00"
+     alt="Photo with response for register route" width="100%" />
+
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
