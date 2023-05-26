@@ -106,11 +106,24 @@ Samples.delete | `protected` | `DELETE` | `/samples/:id`
 > ```bash
 >   Authorization: Bearer 4|ViZeL2NUDQ3o9mbNCQPpGy7q0ZrHAjc2TNHEUcex 
 > ```
-> Not use this token above, it just example! 
+:eyes: <b>Not use this token above, it just example!</b> :eyes: 
 > ######  For example, using `Thunder Client` (VS Code extension) it would be:
 
 https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/cf84fb36-0f6c-4a8a-a70f-b3472d8234eb
 
+<br />
+
+## Content-Type: JSON
+
+<p align="left">Our REST API only supports <b>JSON content</b> for requests with a body and for responses.
+For each request containing a body with JSON, you will need to attach the <b>header options below</b>:</p>
+<p align="left"><i>Nossa API REST suporta apenas <b>conteúdo JSON</b> para solicitações com um corpo e para respostas.
+Para cada requisição contendo corpo com JSON, você precisará anexar as <b>opções de cabeçalho abaixo</b>:</i></p>
+
+| Header          | Value       |
+| --------------- | ----------------- |
+| `Accept` | `application/json` |
+| `Content-Type`  | `application/json` |
 
 ## About Laravel
 
