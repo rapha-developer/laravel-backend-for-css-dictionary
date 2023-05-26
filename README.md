@@ -21,7 +21,7 @@
 
 <p align="left">The (Laravel Backend for CSS Dictionary) API root endpoint have only welcome's response for user. Please refer to the table below for the appropriate endpoint.</p>
 
-<p align="left"><i>"O (Laravel Backend for CSS Dictionary) API endpoint raiz possui apenas uma resposta de boas vindas para o usuário. Por favor, consulte a tabela abaixo para obter o endpoint apropriado."</i></p>
+<p align="left"><i>"A (Laravel Backend for CSS Dictionary) API endpoint raiz possui apenas uma resposta de boas vindas para o usuário. Por favor, consulte a tabela abaixo para obter o endpoint apropriado."</i></p>
 
 Route name | Method | Endpoint
 ---------- | ------ | --------
@@ -133,6 +133,20 @@ Para cada requisição contendo corpo com JSON, você precisará anexar as <b>op
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/5c5db6d1-ef46-4d2e-a4a4-a2708eb2733d"
      alt="Photo with Content-Type=application/json in thunder client" width="500px" />
 
+<br />
+
+## Errors
+
+<p align="left">The (Laravel Backend for CSS Dictionary) API can return the following errors:</p>
+<p align="left"><i>A (Laravel Backend for CSS Dictionary) API pode retornar os seguintes erros:</i></p>
+
+| Status Code | Description                                                           |  Solution
+| ----------- | --------------------------------------------------------------------- | -------------------
+| `401`       | <b>Unauthorized</b>: User has no token or token is not more valid.    | See [Authentication](#authentication).        |
+| `403`       | <b>Forbidden</b>: User not have authorization to make this request. |  See [Authentication](#authentication).
+| `404`       | <b>NOT FOUND.</b>                                                            |
+
+<br />
 
 ## About Laravel
 
