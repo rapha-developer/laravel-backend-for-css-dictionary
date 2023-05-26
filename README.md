@@ -125,6 +125,15 @@ Para cada requisição contendo corpo com JSON, você precisará anexar as <b>op
 | `Accept` | `application/json` |
 | `Content-Type`  | `application/json` |
 
+<br />
+
+> #### Notes
+> ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/5c5db6d1-ef46-4d2e-a4a4-a2708eb2733d"
+     alt="Photo with Content-Type=application/json in thunder client" width="500px" />
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
