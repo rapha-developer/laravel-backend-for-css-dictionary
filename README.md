@@ -345,6 +345,35 @@ id | `integer` | `required`
      alt="Photo with response for show single sample route" width="100%" />
 <br />
 
+### Update Sample
+<p align="left">Update a sample by id</p>
+
+##### URL Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+id | `integer` | `required` 
+
+##### Body Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+property_id | `integer` | `optional`  
+title | `string` | `optional`  
+description | `string` | `optional`
+description_pt | `string` | `optional`
+
+> #### Notes
+> - if you enter with <b>invalid</b> sample id, you will get `404` error <b>(Not found exception)</b>.
+> - if you enter with id from <b>another user</b>, you will get `403` error.
+> - if you enter with property id from <b>another user</b>, you will get `403` error.
+> - If you have success, you will get `200` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/3848f084-a3a4-4859-8b48-3b5bf227b79f"
+     alt="Photo with response for update sample route" width="100%" />
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
