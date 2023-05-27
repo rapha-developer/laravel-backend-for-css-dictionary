@@ -205,6 +205,27 @@ password | `string` | `required`
 
 <br />
 
+### Store Property
+<p align="left">Store a new property</p>
+
+##### Body Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+name | `string` | `required`  
+description | `string` | `required`
+category | `string` | `required`
+
+> #### Notes
+> - if you enter with <b>invalid</b> token, you will get `401` error.
+> - If you have success, you will get `201` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/c148cdcf-6da5-4f2f-b060-888f79bd4d6a"
+     alt="Photo with response for store property route" width="100%" />
+
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
