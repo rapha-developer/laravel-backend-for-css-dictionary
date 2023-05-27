@@ -172,6 +172,26 @@ password_confirmation | `string` | `required`
 
 <br />
 
+### Login User
+<p align="left">Login with the credentials of a registered user</p>
+
+##### Body Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+email | `email` | `required`  
+password | `string` | `required`
+
+> #### Notes
+> - if you enter the <b>wrong</b> email or password, you will get `401` error.
+> - If you have success, you will get `200` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/873dab4f-be12-4e2a-b945-c5142d4ddc02"
+     alt="Photo with response for login route" width="100%" />
+
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
