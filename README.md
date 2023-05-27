@@ -374,6 +374,25 @@ description_pt | `string` | `optional`
      alt="Photo with response for update sample route" width="100%" />
 <br />
 
+### Delete Sample
+<p align="left">Delete a sample by id</p>
+
+##### URL Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+id | `integer` | `required` 
+
+> #### Notes
+> - if you enter with <b>invalid</b> sample id, you will get `404` error <b>(Not found exception)</b>.
+> - if you enter with sample id from <b>another user</b>, you will get `403` error.
+> - If you have success, you will get `200` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/401cca71-5616-4c9c-bd9b-75782d609068"
+     alt="Photo with response for delete sample route" width="100%" />
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
