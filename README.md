@@ -245,6 +245,34 @@ id | `integer` | `required`
 
 <br />
 
+### Update Property
+<p align="left">Update a property by id</p>
+
+##### URL Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+id | `integer` | `required` 
+
+##### Body Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+name | `string` | `optional`  
+description | `string` | `optional`
+category | `string` | `optional`
+
+> #### Notes
+> - if you enter with <b>invalid</b> property id, you will get `404` error <b>(Not found exception)</b>.
+> - if you enter with property id from <b>another user</b>, you will get `403` error.
+> - If you have success, you will get `200` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/47bd8c85-274e-47fa-8cc7-2b03d1d95e5a"
+     alt="Photo with response for update property route" width="100%" />
+
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
