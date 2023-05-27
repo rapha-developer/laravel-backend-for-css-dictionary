@@ -86,7 +86,7 @@ class SamplesController extends Controller
      */
     private function isNotAuthorize($property_id) 
     {
-        $property = Property::where('id', $property_id)->first();
+        $property = Property::findOrFail($property_id);
         if (Auth::user()->id !== $property->user_id) {
             return $this->error('','You are not authorized to make this request', 403);
         }
