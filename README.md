@@ -273,6 +273,26 @@ category | `string` | `optional`
 
 <br />
 
+### Delete Property
+<p align="left">Delete a property by id</p>
+
+##### URL Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+id | `integer` | `required` 
+
+> #### Notes
+> - if you enter with <b>invalid</b> property id, you will get `404` error <b>(Not found exception)</b>.
+> - if you enter with property id from <b>another user</b>, you will get `403` error.
+> - If you have success, you will get `200` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+ 
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/ac89d6e7-67a9-4afe-b2db-0cd6002fb569"
+     alt="Photo with response for delete property route" width="100%" />
+
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
