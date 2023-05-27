@@ -303,7 +303,27 @@ id | `integer` | `required`
 
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/71b5fb84-7dde-42ef-88c8-21863a2b76ea"
      alt="Photo with response for all samples route" width="100%" />
+<br />
 
+### Store Sample
+<p align="left">Store a new Sample</p>
+
+##### Body Parameters
+
+Name | Type | Status 
+---- | ---------- | ------ 
+property_id | `integer` | `required`  
+title | `string` | `required`
+description | `string` | `required`
+description_pt | `string` | `required`
+
+> #### Notes
+> - if you enter with property id from <b>another user</b>, you will get `403` error.
+> - If you have success, you will get `201` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/9c3fd7bc-ce34-43d2-bdc9-f1edd4bd15c7"
+     alt="Photo with response for store sample route" width="100%" />
 <br />
 
 ## About Laravel
