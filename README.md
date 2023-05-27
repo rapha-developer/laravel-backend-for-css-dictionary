@@ -192,6 +192,19 @@ password | `string` | `required`
 
 <br />
 
+### All Properties
+<p align="left">Select all properties stored by current user</p>
+
+> #### Notes
+> - if you enter with <b>invalid</b> token, you will get `401` error.
+> - If you have success, you will get `200` status code.
+ ######  For example, using `Thunder Client` (VS Code extension) it would be:
+
+<img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/4952f641-420e-4a6e-9398-2612cb5c886f"
+     alt="Photo with response for all properties route" width="100%" />
+
+<br />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
