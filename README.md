@@ -82,8 +82,8 @@
 - [Root Endpoint](#root-endpoint)
 - [Authentication](#authentication)
 - [Content-Type: JSON](#content-type-json)
-- [API Rate Limit](#api-rate-limit)
 - [Errors](#errors)
+- [Endpoint Reference](#endpoint-reference)
 
 ## Root Endpoint
 
