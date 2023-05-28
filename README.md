@@ -36,6 +36,45 @@
 <p align="left"><b>API: Interface de programação de aplicações.</b><br /><i>Para aprender a criar uma API web com Laravel, com as funcionalidades básicas de um <b>CRUD</b> (armazenar, mostrar, atualizar e deletar um elemento) para diferentes propriedades css e seus particulares exemplos.</i></p>
 <br />
 
+## :desktop_computer: **To use**
+
+<p align="center"> 
+  <a href="#">
+      <img src="https://img.shields.io/badge/mysql%20%3E=-v10.2.28-a626a6?logo=mysql&style=square&logoColor=white" alt="Mysql version: 10.2.28">
+  </a>
+  <a href="#">
+      <img src="https://img.shields.io/badge/PHP%20%3E=-v8.2.4-5D9CEC?logo=php&style=square&logoColor=white" alt="PHP version: 8.2.4">
+  </a>      
+  <a href="#">
+      <img src="https://img.shields.io/badge/Apache%20%3E=-v2.4.56-FC6E51?logo=apache&style=square&logoColor=white" alt="Apache version: 2.4.56">
+  </a>     
+</p>
+<br />
+
+> #### 1. Clone and open this project
+> ###### 1.1 Clone this repository (Clone este repositório) 
+>```bash
+>   git clone https://github.com/rapha-developer/laravel-backend-for-css-dictionary.git
+> ```
+> ###### 1.2 Go to the project directory (Vá para o diretório do projeto) 
+>```bash
+>  cd laravel-backend-for-css-dictionary
+> ```
+
+<br />
+
+> #### 2. Install dependencies and start the server
+> ######  2.1 Install dependencies with Composer
+> ```bash
+>   composer install 
+> ```
+>
+> ###### 2.2 Run serve with this command:
+> ```bash
+>   php artisan serve
+> ```
+<br />
+
 ## :clipboard: Overview
 
 [Overview](#overview)
