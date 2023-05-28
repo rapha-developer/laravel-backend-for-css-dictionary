@@ -5,6 +5,23 @@
 
 <p align="center"><i>"O Laravel Backend para dicionário CSS é uma API que reúne todas as propriedades, funções, efeitos e animações css. Cada trecho de código coletado possui definição e exemplos para singulares contextos possíveis.</i></p>
 
+<p align="center">
+    <a href="#">
+        <img src="https://img.shields.io/badge/laravel-v10.11.0-FC6E51?logo=laravel&style=square" alt="Laravel version: v10.11.0">
+   </a>
+    <a href="#">
+        <img src="https://img.shields.io/github/languages/top/rapha-developer/laravel-backend-for-css-dictionary?color=AC92EC&logo=php&logoColor=white" alt="Language most used: 76% of PHP">
+    </a>
+    <a href="https://rapha-developer-laravel.000webhostapp.com/">
+        <img src="https://img.shields.io/badge/demo-online-brightgreen" alt="Click to check demo online">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-EC87C0.svg" alt="Made with love" />
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/badge/license-MIT-1abc9c.svg" alt="License MIT" />
+    </a> 
+</p> 
 
 ## Overview
 
