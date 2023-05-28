@@ -22,8 +22,21 @@
         <img src="https://img.shields.io/badge/license-MIT-1abc9c.svg" alt="License MIT" />
     </a> 
 </p> 
+<p align="center">
+    <a href="#student-why">Why (por que?)</a> &nbsp;|&nbsp;
+    <a href="#rocket-demo">Demo</a> &nbsp;|&nbsp;
+    <a href="#desktop_computer-to-use">How to use? (Como usar)</a> &nbsp;|&nbsp;
+    <a href="#clipboard-overview">Overview (Visão geral)</a> &nbsp;|&nbsp;
+    <a href="#zap-about-laravel">About laravel</a> &nbsp;|&nbsp;  
+    <a href="#pencil-license">License</a> 
+</p>
 
-## Overview
+## :student: **Why?**
+<p align="left"><b>API: Application programming interface.</b><br />To learn how to create a web API with Laravel, with the basic functionalities of a <b>CRUD</b> (store, show, update and delete an element) for different css properties and their particular examples.</p><br />
+<p align="left"><b>API: Interface de programação de aplicações.</b><br /><i>Para aprender a criar uma API web com Laravel, com as funcionalidades básicas de um <b>CRUD</b> (armazenar, mostrar, atualizar e deletar um elemento) para diferentes propriedades css e seus particulares exemplos.</i></p>
+<br />
+
+## :clipboard: Overview
 
 [Overview](#overview)
 
@@ -409,10 +422,11 @@ id | `integer` | `required`
      alt="Photo with response for delete sample route" width="100%" />
 <br />
 
-## About Laravel
+## :zap: About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="left">Laravel is a web application framework with expressive, elegant syntax. Laravel takes the pain out of development by easing common tasks used in many web projects.</p>
+<p align="left">Laravel é um framework de aplicações web com sintaxe expressiva e elegante. O Laravel facilita o desenvolvimento facilitando tarefas comuns usadas em muitos projetos da web.</p>
 
-## License
+## :pencil: **License**
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
