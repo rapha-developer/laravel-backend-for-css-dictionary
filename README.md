@@ -237,7 +237,6 @@ password_confirmation | `string` | `required`
 
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/6bc218bc-b606-4537-ae3d-be3a334f2c00"
      alt="Photo with response for register route" width="100%" />
-
 <br />
 
 ### Login User
@@ -257,7 +256,6 @@ password | `string` | `required`
 
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/873dab4f-be12-4e2a-b945-c5142d4ddc02"
      alt="Photo with response for login route" width="100%" />
-
 <br />
 
 ### All Properties
@@ -270,7 +268,6 @@ password | `string` | `required`
 
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/4952f641-420e-4a6e-9398-2612cb5c886f"
      alt="Photo with response for all properties route" width="100%" />
-
 <br />
 
 ### Store Property
@@ -291,7 +288,6 @@ category | `string` | `required`
 
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/c148cdcf-6da5-4f2f-b060-888f79bd4d6a"
      alt="Photo with response for store property route" width="100%" />
-
 <br />
 
 ### Show Single Property
@@ -310,7 +306,6 @@ id | `integer` | `required`
 
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/ca79ad7b-5a28-41dd-9752-7f1431fe8eff"
      alt="Photo with response for show single property route" width="100%" />
-
 <br />
 
 ### Update Property
@@ -338,7 +333,6 @@ category | `string` | `optional`
 
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/47bd8c85-274e-47fa-8cc7-2b03d1d95e5a"
      alt="Photo with response for update property route" width="100%" />
-
 <br />
 
 ### Delete Property
@@ -358,7 +352,6 @@ id | `integer` | `required`
  
 <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/ac89d6e7-67a9-4afe-b2db-0cd6002fb569"
      alt="Photo with response for delete property route" width="100%" />
-
 <br />
 
 ### All Samples
