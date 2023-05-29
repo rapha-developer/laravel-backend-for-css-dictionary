@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/99130786-151b-40c2-8039-958510d84fa0" alt="Laravel Backend For CSS Dictionary Logo" height="500" width="500">
+    <img src="https://github.com/rapha-developer/laravel-backend-for-css-dictionary/assets/91702283/03905b00-d6c5-4597-bb54-42b2fe12cb07" alt="Laravel Backend For CSS Dictionary Logo" height="450" width="450">
 </h1>
 <p align="center">The Laravel Backend for CSS Dictionary is an API that brings together all the css properties, functions, effects and animations. Each collected code snippet has definition and examples for unique possible contexts.</p>
 
