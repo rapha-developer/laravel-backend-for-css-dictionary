@@ -82,6 +82,23 @@ class SamplesController extends Controller
     }
 
     /**
+     * Show sample by property (slug) name from request.
+     */
+    public function showSampleByProperty(Request $request, String $propertySlug, String $sampleOrder)
+    {
+        $propertyName = str_replace('-', ' ', $propertySlug);
+        $propertyModel = Property::where('name', $propertyName)->first();
+        $limit = 1;
+        $ignoreLines = ($sampleOrder - $limit);
+        $sample = Sample::where('property_id', $propertyModel->id)
+            ->orderBy('id')
+            ->offset($ignoreLines)
+            ->limit($limit)
+            ->first();
+        return new SamplesResource($sample);
+    }
+    
+    /**
      * Check if action is not authorize for user.
      */
     private function isNotAuthorize($property_id) 
