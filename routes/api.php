@@ -35,4 +35,5 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::resource('/properties', PropertiesController::class);
     Route::resource('/samples', SamplesController::class);
+    Route::get('/properties/{property}/samples/{sample}', [SamplesController::class, 'showSampleByProperty']);
 });
